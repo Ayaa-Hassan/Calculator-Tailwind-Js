@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+
+    
+<body class="bg-rose-200 flex justify-center 
+                 items-center h-screen">
+        <div class="bg-amber-200 p-8 rounded-lg shadow-2xl shadow-gray-800 
+                    border-2 border-fuchsia-500">
+            <h1 class="text-3xl font-bold text-gray-800 text-center mb-4">
+                 Calculator
+            </h1>
+    
+            
+            <input type="text" id="result" class="w-full bg-gray-100 text-right 
+                          p-4 mb-4 border border-gray-300 
+                          rounded-md focus:outline-none" placeholder="0" readonly />
+    
+           
+            <div class="grid grid-cols-4 gap-2">
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="clearResult()">
+                    C
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('(')">
+                    (
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter(')')">
+                    )
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('/')">
+                    /
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('7')">
+                    7
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('8')">
+                    8
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('9')">
+                    9
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('*')">
+                    *
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('4')">
+                    4
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('5')">
+                    5
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('6')">
+                    6
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('-')">
+                    -
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('1')">
+                    1
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('2')">
+                    2
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('3')">
+                    3
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('+')">
+                    +
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('0')">
+                    0
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('.')">
+                    .
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="calculateResult()">
+                    =
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 
+                               text-gray-800 font-bold py-2 
+                               px-4 rounded" onclick="appendCharacter('%')">
+                    %
+                </button>
+            </div>
+        </div>
+    
+        <script src="index.js"></script>
+
+</body>
+
+</html>
